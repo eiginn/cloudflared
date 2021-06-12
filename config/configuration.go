@@ -9,6 +9,7 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/OpenPeeDeeP/xdg"
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
@@ -81,6 +82,10 @@ func DefaultConfigSearchDirectories() []string {
 	copy(dirs, defaultUserConfigDirs)
 	if runtime.GOOS != "windows" {
 		dirs = append(dirs, defaultNixConfigDirs...)
+	}
+	if runtime.GOOS == "linux" {
+		xd := xdg.New("", "cloudflared")
+		dirs = append([]string{xd.ConfigHome()}, dirs...)
 	}
 	return dirs
 }

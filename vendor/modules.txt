@@ -1,5 +1,8 @@
 # github.com/BurntSushi/toml v0.3.1
 github.com/BurntSushi/toml
+# github.com/OpenPeeDeeP/xdg v1.0.0
+## explicit
+github.com/OpenPeeDeeP/xdg
 # github.com/beorn7/perks v1.0.1
 github.com/beorn7/perks/quantile
 # github.com/caddyserver/caddy v1.0.5

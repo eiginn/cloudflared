@@ -3,6 +3,7 @@ module github.com/cloudflare/cloudflared
 go 1.15
 
 require (
+	github.com/OpenPeeDeeP/xdg v1.0.0
 	github.com/certifi/gocertifi v0.0.0-20200211180108-c7c1fbc02894 // indirect
 	github.com/cloudflare/brotli-go v0.0.0-20191101163834-d34379f7ff93
 	github.com/cloudflare/golibs v0.0.0-20170913112048-333127dbecfc
